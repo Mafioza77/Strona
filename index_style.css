@@ -1,28 +1,35 @@
 Body
 {
-	background-color:black
+    background-color:black
 }
 img
 {
-	margin:0.5%; width:auto
+    width: 99%;
+    margin:0.5%
+
 }
 h1
 {
-	color:white
+    color:white
 }
 li 
 {
-	color:white
+    color: white;
+
 }
 ul
 {
-	color:white
+
+
+    color: white;
+
+
 }
-a
-{
-	text-decoration:none
+a{
+    color: inherit;
+    text-decoration: none;
+
 }
-a:hover
-{
-	color:palegreen
+a:hover {
+    color: palegreen;
 }
