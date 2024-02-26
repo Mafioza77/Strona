@@ -1,12 +1,16 @@
 Body
 {
-	background-color:Black
+	style="Background-color:black, padding:3%"
 }
 img
 {
 	float:right ; padding:3%
 }
 h1
+{
+	color:white
+}
+p 
 {
 	color:white
 }
