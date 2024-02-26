@@ -1,20 +1,20 @@
 Body
 {
-	background-color:black
+	background-color:black;
 }
 img
 {
-	margin:0.5%; width:auto
+	margin:0.5%; width:auto;
 }
 h1
 {
-	color:white
+	color:white;
 }
 li 
 {
-	color:white
+	color:white;
 }
 ul
 {
-	color:white; text-decoration:none
+	color:white; text-decoration:none;
 }
