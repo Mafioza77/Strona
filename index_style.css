@@ -1,10 +1,11 @@
 Body
 {
-	background-image:"panorama.jpg"
+	background-color:black
 }
 img
 {
 	margin:0.5%
+	width:100%
 }
 h1
 {
