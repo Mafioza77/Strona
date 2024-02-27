@@ -34,7 +34,7 @@ p
 container {
       position: relative;
       display: inline-block;
-    background-image: url('tlo.png');
+    background-image:url('../tlo.png')
     }
 image {
     display: block;
