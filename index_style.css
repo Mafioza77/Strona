@@ -1,6 +1,9 @@
 Body
 {
-    background-color:rgb(121,160,235)
+   background-image:url('https://webkod.pl/images/para1.png'),
+                   url('https://webkod.pl/images/para2.png'),
+                   url('https://webkod.pl/images/para3.png');
+    
 }
 img
 {
