@@ -32,19 +32,21 @@ p
 {
     color:white;
 }
-h1-1
+.banner-text h1
 {
-font-size: 26px;
-text-transform: uppercase;
-font-weight: bold;
-text-align:center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align:center;
 }
-.banner-card{
-position: relative
+.banner-card
+{
+    position: relative
 }
-.banner-card img{
-max-width: 100%;
-height: 350px;    
+.banner-card img
+{
+    max-width: 100%;
+    height: 350px;    
 }
 .banner-text
 {
