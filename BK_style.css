@@ -32,6 +32,10 @@ p
 {
     color:white;
 }
+h1
+{
+text-align:center;    
+}
 .banner-card{
 position: relative
 }
