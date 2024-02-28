@@ -43,11 +43,9 @@ p
 }
 Temat
 {
-    position: absolute;
-    top: 20%;
-    color: #fff;
-    padding: 20px;
-    text-align:center;
+    font-sieze:26px;
+    text-transform: uppercase;
+    font-weight: bold
 }
 Text
 {
