@@ -1,3 +1,32 @@
+#element_z_tlem {
+        border:3px solid #EEE;
+        animation:ruch 300s linear infinite alternate;
+        -webkit-animation:ruch 300s linear infinite alternate; /* dla Google Chrome, Safari, Opera 15+ */
+        background-image:url('https://webkod.pl/images/para1.png'),
+                         url('https://webkod.pl/images/para2.png'),
+                         url('https://webkod.pl/images/para3.png');
+      }
+
+      #akapit {
+        width:300px;
+        margin:84px auto;
+        padding:10px;
+        border:3px solid #EEE;
+        background-color:rgba(255,255,255,0.7);
+        font-size:24px;
+      }
+      @keyframes ruch
+      {
+        0% {background-position:0 0, 0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+      }
+      @-webkit-keyframes ruch
+      {
+        0% {background-position:0 0, 0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+      }
+
+
 Body
 {
    background-image:url('https://webkod.pl/images/para1.png'),
