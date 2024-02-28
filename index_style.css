@@ -1,7 +1,7 @@
 #element_z_tlem {
         border:3px solid #EEE;
         animation:ruch 300s linear infinite alternate;
-        -webkit-animation:ruch 300s linear infinite alternate; /* dla Google Chrome, Safari, Opera 15+ */
+        -webkit-animation:ruch 300s linear infinite alternate;
         background-image:url('https://webkod.pl/images/para1.png'),
                          url('https://webkod.pl/images/para2.png'),
                          url('https://webkod.pl/images/para3.png');
@@ -29,9 +29,7 @@
 
 Body
 {
-   background-image:url('https://webkod.pl/images/para1.png'),
-                   url('https://webkod.pl/images/para2.png'),
-                   url('https://webkod.pl/images/para3.png');
+  background-color:rgb(121,160,235);
     
 }
 img
