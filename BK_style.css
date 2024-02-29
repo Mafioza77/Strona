@@ -52,3 +52,9 @@ nav a:hover {
     color: rgb(241,164,121);
     text-decoration: underline;
 }
+section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+}
