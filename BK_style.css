@@ -18,13 +18,10 @@ p
 {
     color:white;
 }
-.h3-1{
+.h3-1
+{
     color:white; 
     margin-left:20px;
-.text{
-    color:white; 
-    margin-left:15px;
-}
 }
 header {
             background-color: rgb(54, 72, 105);
@@ -61,6 +58,7 @@ nav a:hover {
     text-decoration: underline;
 }
 section {
+            color: #fff;
             padding: 20px;
             margin: 20px;
             background-color: rgb(80, 105, 153);
