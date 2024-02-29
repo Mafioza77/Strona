@@ -58,11 +58,11 @@ p
 {
     background-color: rgb(42,56,82);
     color: aliceblue;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 20px;
+    margin: bottom;
     text-decoration: none;
     transition-duration: 0.4s;
-    border: 1px solid #49aaff;
+    border: 1px solid rgb(42,56,82);
     text-transform: uppercase;
 }
 
