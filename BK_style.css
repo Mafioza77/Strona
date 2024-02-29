@@ -1,6 +1,8 @@
 Body
 {
     background-color:rgb(121,160,235);
+    margin: 0;
+    padding: 0;
     
 }
 img
@@ -22,7 +24,19 @@ header {
             padding: 10px 0;
             text-align: center;
 }
-nav {
+header a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px; 
+}
+header a:hover
+{
+    color: rgb(241,164,121);
+    text-decoration: none;
+}
+nav 
+{
             background-color: rgb(80, 105, 153);
             color: #fff;
             text-align: center;
@@ -35,8 +49,6 @@ nav a
             padding: 0 10px;
 }
 nav a:hover {
-    color: palegreen;
+    color: rgb(241,164,121);
     text-decoration: underline;
 }
-
-
