@@ -23,7 +23,7 @@ header {
             color: #fff;
             padding: 10px 0;
             text-align: center;
-}
+} 
 header a
 {
     color: #fff;
@@ -33,7 +33,7 @@ header a
 header a:hover
 {
     color: rgb(241,164,121);
-    text-decoration: none;
+    text-decoration: underline;
 }
 nav 
 {
