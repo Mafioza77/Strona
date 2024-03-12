@@ -26,6 +26,7 @@ background: #9CF;
 #left
 {
 width: 170px;
+hight: auto;
 float: left;
 background-color: yellow;
 }
