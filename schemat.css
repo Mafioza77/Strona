@@ -6,6 +6,7 @@ padding: 0;
 #container
 {
 width: 750px;
+margin-up:0px;
 margin-left: auto;
 margin-right: auto;
 border:1px solid black;
@@ -43,5 +44,6 @@ background: #ABC;
 #footer
 {
 clear: both;
+margin-bottom:0px;
 background: #999;
 }
