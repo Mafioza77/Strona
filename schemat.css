@@ -21,11 +21,17 @@ width: 170px;
 float: left;
 background: #ABC;
 }
+#main
+{
+width: 410px;
+float: center;
+background: #9FF;
+}
 #right
 {
-width: 580px;
-float: left;
-background: #9FF;
+  width: 170px;
+  float: right;
+background: #ABC;
 }
 #footer
 {
