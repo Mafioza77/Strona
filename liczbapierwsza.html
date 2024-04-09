@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Prime Number</title>
+</head>
+<body>
+
+<input type="number" id="numberInput" placeholder="Enter a number">
+<button onclick="checkPrime()">Check Prime</button>
+<p id="result"></p>
+
+<script>
+    function checkPrime() {
+        const number = document.getElementById("numberInput").value;
+        const resultElement = document.getElementById("result");
+
+        // Sprawdzenie, czy liczba jest mniejsza lub równa 1
+        if (number <= 1) {
+            resultElement.textContent = "Please enter a number greater than 1.";
+            return;
+        }
+
+        // Sprawdzenie, czy liczba jest podzielna przez liczby od 2 do pierwiastka kwadratowego z tej liczby
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                resultElement.textContent = "The number is not prime.";
+                return;
+            }
+        }
+
+        // Jeśli żaden dzielnik nie został znaleziony, liczba jest liczbą pierwszą
+        resultElement.textContent = "The number is prime.";
+    }
+</script>
+
+</body>
+</html>
