@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color</title>
+<style>
+    body {
+        transition: background-color 1s ease;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h2>Click the button to change background color</h2>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+    function changeColor() {
+        const currentTime = new Date().getHours();
+
+        let color;
+        if (currentTime < 12) {
+            color = "lightblue";
+        } else if (currentTime < 18) {
+            color = "lightgreen";
+        } else {
+            color = "lightpink";
+        }
+
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>
