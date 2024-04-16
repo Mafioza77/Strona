@@ -12,39 +12,71 @@
     grid-gap: 10px;
     padding: 10px;
   }
-  body{
-    margin:10%
-  }
 
   .gallery img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Dodajemy kursor wskazujący, aby pokazać, że obraz jest klikalny */
   }
 
-  .gallery img:hover {
-    transform: scale(1.05);
+  /* Styl dla obrazu na pełnym ekranie */
+  #fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Przezroczyste tło */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ustawiamy dużą wartość indeksu z, aby nakładać na inne elementy */
+  }
+
+  #fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
   }
 </style>
 </head>
 <body>
-<h1>GALERIA</h1>
-<div class="gallery">
-  <img src="1.jpg" alt="Obraz 1">
-  <img src="2.jpg" alt="Obraz 2">
-  <img src="3.jpg" alt="Obraz 3">
-  <img src="4.jpg" alt="Obraz 4">
-  <img src="5.jpg" alt="Obraz 5">
-  <img src="6.jpg" alt="Obraz 6">
-  <img src="7.jpg" alt="Obraz 7">
-  <img src="8.jpg" alt="Obraz 8">
-  <img src="9.jpg" alt="Obraz 9">
-  <img src="10.jpg" alt="Obraz 10">
 
+<div class="gallery">
+  <img src="1.jpg" alt="Obraz 1" onclick="openFullscreen('obraz1.jpg')">
+  <img src="2.jpg" alt="Obraz 2" onclick="openFullscreen('obraz2.jpg')">
+  <img src="3.jpg" alt="Obraz 3" onclick="openFullscreen('obraz3.jpg')">
+  <img src="4.jpg" alt="Obraz 4" onclick="openFullscreen('obraz4.jpg')">
+  <img src="5.jpg" alt="Obraz 5" onclick="openFullscreen('obraz5.jpg')">
+  <img src="6.jpg" alt="Obraz 6" onclick="openFullscreen('obraz6.jpg')">
+  <img src="7.jpg" alt="Obraz 7" onclick="openFullscreen('obraz7.jpg')">
+  <img src="8.jpg" alt="Obraz 8" onclick="openFullscreen('obraz8.jpg')">
+  <img src="9.jpg" alt="Obraz 9" onclick="openFullscreen('obraz9.jpg')">
+  <img src="10.jpg" alt="Obraz 10" onclick="openFullscreen('obraz10.jpg')">
+  
   <!-- Dodaj więcej obrazów tutaj -->
 </div>
+
+<div id="fullscreen" onclick="closeFullscreen()">
+  <img id="fullscreen-image">
+</div>
+
+<script>
+  // Funkcja do otwierania obrazu na pełnym ekranie
+  function openFullscreen(imageUrl) {
+    var fullscreenImage = document.getElementById('fullscreen-image');
+    fullscreenImage.src = imageUrl;
+    var fullscreenDiv = document.getElementById('fullscreen');
+    fullscreenDiv.style.display = 'flex'; // Pokazujemy obraz na pełnym ekranie
+  }
+
+  // Funkcja do zamykania obrazu na pełnym ekranie
+  function closeFullscreen() {
+    var fullscreenDiv = document.getElementById('fullscreen');
+    fullscreenDiv.style.display = 'none'; // Ukrywamy obraz na pełnym ekranie
+  }
+</script>
 
 </body>
 </html>
