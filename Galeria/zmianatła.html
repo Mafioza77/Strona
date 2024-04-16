@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moja Galeria</title>
+<style>
+  /* Style dla galerii */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  body{
+    margin:10%
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+<h1>GALERIA</h1>
+<div class="gallery">
+  <img src="1.jpg" alt="Obraz 1">
+  <img src="2.jpg" alt="Obraz 2">
+  <img src="3.jpg" alt="Obraz 3">
+  <img src="4.jpg" alt="Obraz 4">
+  <img src="5.jpg" alt="Obraz 5">
+  <img src="6.jpg" alt="Obraz 6">
+  <img src="7.jpg" alt="Obraz 7">
+  <img src="8.jpg" alt="Obraz 8">
+  <img src="9.jpg" alt="Obraz 9">
+  <img src="10.jpg" alt="Obraz 10">
+
+  <!-- Dodaj więcej obrazów tutaj -->
+</div>
+
+</body>
+</html>
