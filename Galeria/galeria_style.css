@@ -1,1 +1,36 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  body{
+    background-color: rgb(121, 160, 235);
+    margin:10%;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; /* Dodajemy kursor wskazujący, aby pokazać, że obraz jest klikalny */
+  }
 
+  /* Styl dla obrazu na pełnym ekranie */
+  #fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Przezroczyste tło */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ustawiamy dużą wartość indeksu z, aby nakładać na inne elementy */
+  }
+
+  #fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+  }
