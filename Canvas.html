@@ -5,38 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Canvas Animation</title>
 <style>
-    canvas {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #myCanvas {
         border: 1px solid black;
     }
 </style>
 </head>
-<body style="background-color: rgb(4, 179, 56);">
-  <a href="index.html">Strona Główna</a><br>
-<canvas id="myCanvas" width="1400%" height="400">
-</canvas>
+<body style="background-color: rgb(26, 173, 6)">
+<canvas id="myCanvas" width="700" height="650"></canvas>
 
 <script>
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     
-    var ball = new Image();
-    ball.src = 'image1.jpg';
+    var ball = new Image(); 
+    ball.src = 'image1.jpg'; 
 
-    var x = canvas.width / 10;
-    var y = canvas.height - 28;
+    var ball2 = new Image(); 
+    ball2.src = 'image2.jpg'; 
+
+    var ball3 = new Image(); 
+    ball3.src = 'image3.jpg'; 
+
+    var x = canvas.width / 7;
+    var y = canvas.height / 2;
+
+    var x2 = canvas.width / 15;
+    var y2 = canvas.height / 3;
+
+    var x3 = canvas.width / 2;
+    var y3 = canvas.height / 1.5;
 
     var dx = 2;
     var dy = -2;
 
-    var ballRadius = 30;
+    var ballRadius = 20; 
 
-    function drawBall() {
-        ctx.drawImage(ball, x - ballRadius, y - ballRadius, ballRadius * 2, ballRadius * 2);
+    function drawBall(image, x, y) {
+        ctx.drawImage(image, x - ballRadius, y - ballRadius, ballRadius * 2, ballRadius * 2);
     }
 
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawBall();
+        drawBall(ball, x, y);
+        drawBall(ball2, x2, y2);
+        drawBall(ball3, x3, y3);
+        
+        // Kierunek ruchu i odbicia dla pierwszego obrazka
         if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
             dx = -dx;
         }
@@ -45,6 +67,51 @@
         }
         x += dx;
         y += dy;
+
+        // Kierunek ruchu i odbicia dla drugiego obrazka
+        if (x2 + dx > canvas.width - ballRadius || x2 + dx < ballRadius) {
+            dx = -dx;
+        }
+        if (y2 + dy > canvas.height - ballRadius || y2 + dy < ballRadius) {
+            dy = -dy;
+        }
+        x2 += dx;
+        y2 += dy;
+
+        // Kierunek ruchu i odbicia dla trzeciego obrazka
+        if (x3 + dx > canvas.width - ballRadius || x3 + dx < ballRadius) {
+            dx = -dx;
+        }
+        if (y3 + dy > canvas.height - ballRadius || y3 + dy < ballRadius) {
+            dy = -dy;
+        }
+        x3 += dx;
+        y3 += dy;
+
+        // Sprawdzanie kolizji między obrazami i zmiana kierunku ruchu
+        var dx1 = x - x2;
+        var dy1 = y - y2;
+        var distance1 = Math.sqrt(dx1 * dx1 + dy1 * dy1);
+        if (distance1 < ballRadius * 2) {
+            dx = -dx;
+            dy = -dy;
+        }
+
+        var dx2 = x - x3;
+        var dy2 = y - y3;
+        var distance2 = Math.sqrt(dx2 * dx2 + dy2 * dy2);
+        if (distance2 < ballRadius * 2) {
+            dx = -dx;
+            dy = -dy;
+        }
+
+        var dx3 = x2 - x3;
+        var dy3 = y2 - y3;
+        var distance3 = Math.sqrt(dx3 * dx3 + dy3 * dy3);
+        if (distance3 < ballRadius * 2) {
+            dx = -dx;
+            dy = -dy;
+        }
     }
 
     setInterval(draw, 10);
