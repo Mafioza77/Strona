@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona One Page z Galerią</title>
+    <link rel="stylesheet" href="poprawki_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kontakt</h1>
+        <nav class="menu">
+            <a href="index.html" class="tile">Strona Główna</a>
+            <a href="historia.html" class="tile">Historia</a>
+            <a href="komunikacja.html" class="tile">Komunikacja</a>
+            <a href="kontakt.html" class="tile">Kontakt</a>
+        </nav>
+        </div>
+<hr>
+    </div>
+    
+    <main>
+        <section class="contact-info">
+            <h2>Dane kontaktowe</h2>
+            <p>Adres: ul. Przykładowa 123, 00-000 </p>
+            <p>Telefon: 123-456-789</p>
+            <p>Email: kontakt@example.com</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Formularz kontaktowy</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Imię i nazwisko:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Wyślij">
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <hr>
+        <p>&copy; 2024 Sumina CITY. Wszelkie prawa zastrzeżone.</p>
+        <p>Created by: Bartosz Piecha 2cT-2</p>
+    </footer>
+</body>
+</html>
