@@ -61,6 +61,8 @@ body {
 
 .gallery {
     display: flex;
+    hight: 90%;
+    width: 90%;
     background-color: rgb(243, 231, 216);
     
 }
